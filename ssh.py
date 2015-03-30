@@ -22,7 +22,7 @@ class RunCommandRemotely:
     self.subdir      = subdir
     self.remdir      = ''
     self.subsubdir   = ''
-    self.pkeyfile    = os.path.expanduser('~/.ssh/id_rsa')
+    self.pkeyfile    = os.path.expanduser('~/.ssh/id_rsa_fw')
     self.mykey       = paramiko.RSAKey.from_private_key_file(
       self.pkeyfile)
     self.trnsprt     = paramiko.Transport((self.hostname, 22))
